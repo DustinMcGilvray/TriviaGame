@@ -1,0 +1,32 @@
+Pseudo-Code for Trivia Game
+1. Build a set of Global Variables with values (if applicable):
+	a. gameClock = time allowed player to answer
+	b. correctAnswerCount = 0;
+	c. incorrectAnswerCount = 0;
+	d. unansweredCount = 0;
+	e. questionCount = 0;
+	f. gameScreens - this will be for showing correct and incorrect screens to player.
+	g. startScreen - this will be used for initial game start screen.
+	h. endScreen - this will be used for final game end screen.
+
+2. Build an Array of Trivia Questions.
+3. Build an Array of Multiple Choice Answers.
+4. Build an Array of Correct Answers.
+5. Build an Array(s) of any images, videos, and/or audio files associated with answers.
+
+6. Build the Game Functions:
+	a. Document Ready Function - initial document loaded.
+	b. beginningScreen Function - 
+	c. wrongAnswer Function - wrong answer is chosen.
+	d. rightAnswer Function - correct answer is chosen.
+	e. noAnswer Function - gameClock runs out.
+	f. delay Function - time delay until next question appears.
+	g. timer Function - overall timer for player to answer questions
+	h. gameReset Function - resets Counts, Timers, and Screens.
+
+
+7. On-Click Events
+	a. Start Button - to start the game, pull first question, and start game clock.
+	b. Answer Chosen - if/else statement for selected answer being right or wrong.
+	c. Reset Button - to restart the game from the beginning.
+	

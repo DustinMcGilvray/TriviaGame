@@ -1,0 +1,128 @@
+/*Local Font*/
+@font-face {
+    font-family: 'pdark';
+    src: url("../Perfect\ Dark/pdark.ttf");
+}
+
+/*Background Images*/
+body {
+    background-image: url("../images/voltron_text_no_background.png"), url("../images/background_voltron_stars.jpg");
+    background-repeat: no-repeat;
+    background-size: 25%, 2000px 1000px;
+    background-position: center top;
+}
+
+.btn0 {
+    background-color: red;
+}
+
+.btn1 {
+    background-color: green;
+}
+
+.btn2 {
+    background-color: blue;
+}
+
+/*Start Button*/
+a {
+    text-decoration:none;
+    color:#FFF;
+  }
+  .rainbow-button {
+    width:calc(10vw + 6px);
+    height:calc(4vw + 6px);
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-family: 'Orbitron', sans-serif;
+    font-size:1.5vw;
+    font-weight:bold;
+  }
+  .rainbow-button:after {
+    content:attr(alt);
+    width:10vw;
+    height:4vw;
+    background-color:#191919;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .rainbow-button:hover {
+    animation:slidebg 2s linear infinite;
+  }
+  
+  @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+}
+
+.card {
+    width: 700px;
+    height: 300px;
+    margin: auto;
+    margin-top: 350px;
+}
+
+/*Start Button Position*/
+.start_button {
+    margin-left: 290px;
+}
+
+/*Play Again Button Position*/
+.restart_button {
+    margin-left: 290px;
+}
+
+
+/*Question and Answer Location*/
+#empty_div {
+    margin: auto;
+    color: ghostwhite;
+    font-family: 'pdark';
+    font-size: 24px;
+}
+
+/*Image Styling*/
+#picture {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+/*Trivia Game Title*/
+h1 {
+    font-size: 70px;
+    font-family: 'pdark';
+    font-kerning: normal;
+    color: ghostwhite;
+    margin-left: 50px;
+}
+
+/*Game Timer Styling*/
+.card-subtitle {
+    font-size: 30px;
+    font-family: 'pdark';
+    font-kerning: normal;
+    color: ghostwhite;
+    width: 100px;
+    height: 40px;
+    margin: auto;
+    justify-content: center;
+}
+
+/*Footer*/
+.navbar {
+    background-color: black;
+    color: ghostwhite;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+ 
