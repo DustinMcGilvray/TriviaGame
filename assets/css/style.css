@@ -12,16 +12,45 @@ body {
     background-position: center top;
 }
 
+/*Answer Buttons*/
 .btn0 {
+    border-color: red;
+    color: red;
+}
+
+.btn0:hover {
     background-color: red;
+    color: white;
 }
 
 .btn1 {
-    background-color: green;
+    border-color: green;
+    color: green;
 }
 
-.btn2 {
+.btn1:hover {
+    background-color: green;
+    color: white;
+}
+
+ .btn2 {
+    border-color: blue;
+    color: blue;
+}
+
+.btn2:hover {
     background-color: blue;
+    color: white;
+}
+
+.btn3 {
+    border-color: yellow;
+    color: yellow;
+}
+
+.btn3:hover {
+    background-color: yellow;
+    color: black;
 }
 
 /*Start Button*/
@@ -78,7 +107,6 @@ a {
     margin-left: 290px;
 }
 
-
 /*Question and Answer Location*/
 #empty_div {
     margin: auto;
@@ -87,23 +115,12 @@ a {
     font-size: 24px;
 }
 
-#theImg {
-    width: 100px;
-    height: 100px;
-}
-
-/*Image Styling*/
-#picture {
-    width: 100px;
-    height: 100px;
-    margin: auto;
-}
-
 /*Trivia Game Title*/
 h1 {
     font-size: 70px;
     font-family: 'pdark';
     font-kerning: normal;
+    font-style: italic;
     color: ghostwhite;
     margin-left: 50px;
 }

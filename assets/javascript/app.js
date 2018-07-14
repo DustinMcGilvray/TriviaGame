@@ -108,7 +108,7 @@ $(document).ready(function () {
         $("#empty_div").append('<img src="'+triviaArray[this.currentQuestion].image+'"/>');
 
         if (currentQuestion === triviaArray.length - 1){
-           finalScreen();
+           setTimeout(finalScreen, 1000*4);
            }
            else {
            setTimeout(nextQuestion, 1000*4);
@@ -126,7 +126,7 @@ $(document).ready(function () {
         $("#empty_div").append('<img src="'+triviaArray[this.currentQuestion].image+'"/>');
 
         if (currentQuestion === triviaArray.length - 1){
-           finalScreen();
+           setTimeout (finalScreen, 1000*4);
            }
            else {
            setTimeout(nextQuestion, 1000*4);
@@ -143,7 +143,7 @@ $(document).ready(function () {
          $("#empty_div").append('<img src="'+triviaArray[this.currentQuestion].image+'"/>');
 
          if (currentQuestion === triviaArray.length - 1){
-            finalScreen();
+            setTimeout(finalScreen, 1000*4);
             }
             else {
             setTimeout(nextQuestion, 1000*4);
@@ -176,7 +176,6 @@ $(document).ready(function () {
         $("#empty_div").html("<p>Answers Correct: "+ correctAnswerCount + "</p>");
         $("#empty_div").append("<p>Wrong Answers: " + incorrectAnswerCount + "</p>");
         $("#empty_div").append("<p> Unanswered: " + unansweredCount + "</p>");
-        // $("#empty_div").append("<img src=assets/images/voltron.gif/>");
         $("#empty_div").append("<button type='button' id='restart_button' class='btn btn-outline-light'>Play Again</button>");
     }
    
