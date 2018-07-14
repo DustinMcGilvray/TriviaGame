@@ -83,8 +83,13 @@ a {
 #empty_div {
     margin: auto;
     color: ghostwhite;
-    font-family: 'pdark';
+    font-family:'Orbitron', sans-serif;
     font-size: 24px;
+}
+
+#theImg {
+    width: 100px;
+    height: 100px;
 }
 
 /*Image Styling*/

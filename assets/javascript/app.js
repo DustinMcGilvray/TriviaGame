@@ -1,5 +1,5 @@
 //Global Variables
-var gameTimer = 5;
+var gameTimer = 30;
 var gameClock;
 var incorrectAnswerCount = 0;
 var correctAnswerCount = 0;
@@ -14,63 +14,63 @@ var triviaArray=[
         question:"The head of Voltron is contained in what part of the black lion?",
         answerChoices: ["Chest", "Between its front paws", "Back", "Mouth"],
         correctAnswer: "Chest",
-        image: "assets/images/voltron_crest.jpg"
+        image: "assets/images/black_lion_head.gif"
     }, 
 
     {
         question:"How many members of the team have ever piloted the Black Lion.",
         answerChoices:["1", "2", "3", "4"],
         correctAnswer: "2",
-        image: "assets/images/voltron_shield.jpg"
+        image: "assets/images/sven_and_princess_allura.gif"
     },
 
     {
         question:"What character was part of the Voltron team at the beginning, but was later replaced?",
         answerChoices:["Sven", "Keith", "Princess Allura", "Pidge"],       
         correctAnswer: "Sven",
-        image: "assets/images/voltron_black_lion_head.jpg"
+        image: "assets/images/sven.gif"
     },
     {
         question:"What is the name of the evil witch that serves Planet Doom?",
         answerChoices:["Hazel", "Heron", "Hilda", "Haggar"],       
         correctAnswer: "Haggar",
-        image: "assets/images/voltron_black_lion_head.jpg"
+        image: "assets/images/haggar.gif"
     },
     {
         question:"What was the name of King Zarkon's son?",
         answerChoices:["Prince Rotol", "Prince Lotor", "Prince Trool", "Prince Charles"],       
         correctAnswer: "Prince Lotor",
-        image: "assets/images/voltron_black_lion_head.jpg"
+        image: "assets/images/prince_lotor.gif"
     },
     {
         question:"What are the names of the mechanical monsters that Planet Doom constantly sends to fight Voltron?",
         answerChoices:["Cyborgs", "Roborgs", "Robeasts", "Cybeasts"],       
         correctAnswer: "Robeasts",
-        image: "assets/images/voltron_black_lion_head.jpg"
+        image: "assets/images/robeast.jpg"
     },
     {
         question:"Although he pilots the red lion, what color is Lance's uniform?",
         answerChoices:["Red", "Blue", "Black", "Purple"],       
         correctAnswer: "Blue",
-        image: "assets/images/voltron_black_lion_head.jpg"
+        image: "assets/images/lance.gif"
     },
     {
         question:" What color are the lions that form Voltron's arms?",
         answerChoices:["Blue and Yellow", "Purple and Orange", "Black and Red", "Red and Green"],       
         correctAnswer: "Red and Green",
-        image: "assets/images/voltron_black_lion_head.jpg"
+        image: "assets/images/red_arm.gif"
     },
     {
         question:"Who is the youngest member of the Voltron force?",
         answerChoices:["Keith", "Princess Allura", "Lance", "Pidge"],       
         correctAnswer: "Pidge",
-        image: "assets/images/voltron_black_lion_head.jpg"
+        image: "assets/images/pidge.gif"
     },
     {
         question:"Lion Voltron teamed up with which other Voltron against Planet Doom?",
         answerChoices:["Vehicle Voltron", "Tank Voltron", "Airplane Voltron", "Machine Voltron"],       
         correctAnswer: "Vehicle Voltron",
-        image: "assets/images/voltron_black_lion_head.jpg"
+        image: "assets/images/vehicle_voltron.jpg"
     }
 ];
 
@@ -88,6 +88,7 @@ $(document).ready(function () {
 
     //Deploy Questions Function
     function deployQuestion() {
+        $(".card-subtitle").show();
         gameClock = setInterval(timerFunction, 1000);
 
         $("#empty_div").html("<p id='triviaQuestion'>" + triviaArray[this.currentQuestion].question + "</p>");
@@ -104,7 +105,8 @@ $(document).ready(function () {
 
         $("#empty_div").html("<h3>Incorrect!</h3>");
         $("#empty_div").append("<p>The Correct Answer is: " + triviaArray[this.currentQuestion].correctAnswer + "</p>");
-        
+        $("#empty_div").append('<img src="'+triviaArray[this.currentQuestion].image+'"/>');
+
         if (currentQuestion === triviaArray.length - 1){
            finalScreen();
            }
@@ -121,6 +123,7 @@ $(document).ready(function () {
 
         $("#empty_div").html("<h3>Correct!</h3>");
         $("empty_div").append("<img src="+triviaArray[this.currentQuestion].image+"/>");
+        $("#empty_div").append('<img src="'+triviaArray[this.currentQuestion].image+'"/>');
 
         if (currentQuestion === triviaArray.length - 1){
            finalScreen();
@@ -149,7 +152,7 @@ $(document).ready(function () {
 
     //Next Question Function
      function nextQuestion() {
-     gameTimer = 5;  
+     gameTimer = 30;  
      $("#empty_div").html("<p>" + gameTimer + "</p>");
      currentQuestion++;
      deployQuestion();
@@ -169,9 +172,11 @@ $(document).ready(function () {
 
     //End Screen Function
     function finalScreen() {
+        $(".card-subtitle").hide();
         $("#empty_div").html("<p>Answers Correct: "+ correctAnswerCount + "</p>");
         $("#empty_div").append("<p>Wrong Answers: " + incorrectAnswerCount + "</p>");
         $("#empty_div").append("<p> Unanswered: " + unansweredCount + "</p>");
+        // $("#empty_div").append("<img src=assets/images/voltron.gif/>");
         $("#empty_div").append("<button type='button' id='restart_button' class='btn btn-outline-light'>Play Again</button>");
     }
    
@@ -181,7 +186,7 @@ $(document).ready(function () {
     incorrectAnswerCount = 0;
     correctAnswerCount = 0;
     unansweredCount = 0;
-    gameTimer = 5;
+    gameTimer = 30;
     clearInterval(gameClock);
     deployQuestion();
  }
