@@ -93,7 +93,7 @@ $(document).ready(function () {
 
         $("#empty_div").html("<p id='triviaQuestion'>" + triviaArray[this.currentQuestion].question + "</p>");
         for (var i = 0; i < triviaArray[this.currentQuestion].answerChoices.length;i++){
-            $("#empty_div").append("<p> <button type='button'id='answerButton' class='btn btn-outline-light btn"+i+"' >" +triviaArray[this.currentQuestion].answerChoices[i]+"</button></p>");
+            $("#empty_div").append("<p> <button type='button'class='answerButton btn btn-outline-light btn"+i+"' >" +triviaArray[this.currentQuestion].answerChoices[i]+"</button></p>");
         }
         
     }
@@ -198,7 +198,7 @@ $(document).ready(function () {
     });
 
      //Answer Chosen On-Click
-     $("#empty_div").on("click", "#answerButton", function () {
+     $("#empty_div").on("click", ".answerButton", function () {
         clearInterval(gameClock);
         userChoice = $(this).text();
         if(userChoice===triviaArray[currentQuestion].correctAnswer){

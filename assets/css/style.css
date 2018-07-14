@@ -13,6 +13,10 @@ body {
 }
 
 /*Answer Buttons*/
+
+.answerButton {
+    width: 50%;
+}
 .btn0 {
     border-color: red;
     color: red;
