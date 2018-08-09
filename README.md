@@ -1,3 +1,27 @@
 # Trivia Game
 
-![screenShot](assets/images/voltronTriviaSS.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![screenShot](assets/images/voltronSS_one.jpg)
