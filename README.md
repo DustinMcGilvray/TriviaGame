@@ -24,4 +24,4 @@
 
 
 
-![screenShot](assets/images/voltronSS_one.jpg)
+![screenShot](assets/images/voltronSS_one.JPG)
