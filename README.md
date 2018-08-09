@@ -1,26 +1,22 @@
-# Trivia Game
+# Voltron Trivia Game
+
+## Description
+
+## Link
+["Defenders of the Universe!](https://dustinmcgilvray.github.io/TriviaGame/)
+
+## Built With
+* HTML5
+* CSS3
+* JavaScript
+* jQuery
+* Bootstrap
 
 
+## Acknowledgments
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Authors
 
 
 
