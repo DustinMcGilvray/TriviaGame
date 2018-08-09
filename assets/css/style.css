@@ -101,9 +101,8 @@ a {
     margin-top: 350px;
 }
 
-/*Start Button Position*/
-.start_button {
-    margin-left: 290px;
+.card-body{
+    margin: auto;
 }
 
 /*Play Again Button Position*/
