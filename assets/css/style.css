@@ -8,7 +8,7 @@
 body {
     background-image: url("../images/voltron_text_no_background.png"), url("../images/background_voltron_stars.jpg");
     background-repeat: no-repeat;
-    background-size: 2000px 1000px;
+    background-size: 500px 300px, 2000px 1000px;
     background-position: center top;
 }
 
