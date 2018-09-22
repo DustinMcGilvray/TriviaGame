@@ -6,7 +6,7 @@ Trivia Game themed around the 1980's Anime Classic "Voltron: Defender of the Uni
 ## Link to App
 ["Defenders of the Universe!"](https://dustinmcgilvray.github.io/TriviaGame/)
 
-## Built With
+## Crafted With
 * HTML5
 * CSS3
 * JavaScript
