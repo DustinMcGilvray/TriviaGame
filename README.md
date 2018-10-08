@@ -1,4 +1,6 @@
-# Voltron Trivia Game
+
+
+## Overview
 Trivia Game themed around the 1980's Anime Classic "Voltron: Defender of the Universe." This is a timed, multiple choice game that will test the players knowledge on the hit anime series. 
 
 ![screenShot](assets/images/voltronSS_one.JPG)
